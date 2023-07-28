@@ -10,9 +10,18 @@ The data will be sourced from kaggle
 The following steps was followed in this project
 - Creating a Github Respository
 - Creating three folders
-  - Read
-  - gg
-  - Data Samples or Snapshots
+  - Readme file: This is the file you are reading, it explains the project, the data sources used, the steps followed and the outcomes.
+  - Code files: You will find in this file, the scripts used in the extraction, transformation and loading (ETL) the data.
+  - Data Samples or Snapshots: This file will include samples or snapshots of the dataset before and after a transformation.
+- Data Selection: I selected the hydropower-consumption and solar-energy consumption. I ensured they had a common attribute to enable join them and carry out a comparison.
+- Data Extraction: I extracted the data from kaggle Renewable Energy by
+  - Downloading the two csv data into my local drive.
+  - Opened my MySQL database
+  - Created a Schema called Energy
+  - Opened the table data import wizard under my schema
+  - Browsed out the file path of where my data is stored on my local drive and clicked next at the bottom right of the screen
+  - I selected the destination and clicked next at the bottom right of the screen
+  - 
 
 
 
