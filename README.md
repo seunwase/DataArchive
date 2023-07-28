@@ -32,19 +32,17 @@ The following steps was followed in this project
     
 - Data Transformation: The following steps were carried out to perfrom quality checks on my data and to transform it into a view i can use for further analysis
   - I ensured both tables (hydropower-consumption and solar-energy consumption) were comaptible for a join i.e identifying the column on which the join would be made are align.
-  - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both ..... and ....., created a join on the 'code' column and a  groupby 'Country' and 'Code' (see syntax in the code files and before and after screenshots in the data Samples file). 
-  - I created a new table called hydro_solar_consumption
+  - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both ..... and ....., created a join on the 'code' column and a  groupby 'Country' and 'Code' (see syntax in the code files and before and after screenshots in the data Samples file).
+ 
+- Data Loading
+  - I created a new table called hydro_solar_consumption from the joined table (see syntax in code file)
   - I noticed some null values in my table under the country_code which is attributed to continents not having a Country_code, I didnt need this rows with null 
   - I deleted the rows fwith null (see syntax in code file and before and after screen shots)
-  - My data was finally transformed to the table I wanted.
+  - My data was finally transformed and succesfully loaded into MySQL database.
+ 
   
-
-
-
-
-
-
-
-
-
 ## OUTCOMES
+I succesfully created a table with the country, country code, hydro average electricity and average solar electricity consumption for further analysis loaded into MySQL database.
+
+## REFLECTION
+This project guides me throught he steps of extracting datasets into MySQL, tranforming them into a desired form using join and groupby, creating a new table of the transformed data and loading it in MySQL database. With fewer codes I could have achieved the same goal of extraction and transforming before loading it into MySQL. 
