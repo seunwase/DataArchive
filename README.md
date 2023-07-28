@@ -8,10 +8,9 @@ The data will be sourced from kaggle
 
 ## STEPS
 The following steps was followed in this project
--Creating a Github Respository
--Creating three folders 
-    #### 1. Readme file
-#### 1. Readme file
+- Creating a Github Respository
+- Creating three folders 
+
 
 
      -Data Samples or Snapshots**
