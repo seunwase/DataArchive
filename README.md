@@ -9,11 +9,14 @@ The data will be sourced from kaggle
 ## STEPS
 The following steps was followed in this project
 - Creating a Github Respository
-- Creating three folders 
+- Creating three folders
+  - Read
+  - gg
+  - Data Samples or Snapshots
 
 
 
-     -Data Samples or Snapshots**
+
 
 
 
