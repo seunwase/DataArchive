@@ -10,9 +10,9 @@
 #### The following steps was followed in this project
 #### Creating a Github Respository
 #### Creating three folders 
-     -**Readme file**
+     **-Readme file
      -Code files
-     -Data Samples or Snapshots
+     -Data Samples or Snapshots**
 
 
 
