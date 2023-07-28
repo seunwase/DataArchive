@@ -28,9 +28,12 @@ The following steps was followed in this project
   - I clicked next to execute the importation of my data
   - After the completion, I refreshed the Schema under Navigator to confirm my table has been added under my schema
   - I repeated the process for importing the solar-energy consumption into my schema.
-  - I ran a select * from the two tables to ensure they loaded.
+  - I ran a select * from the two tables to ensure they loaded. (This will show all the colums in the table and rows)
     
-- Data Transformation
+- Data Transformation: The following steps were carried out to perfrom quality checks on my data and to transform it into a view i can use for further analysis
+  - I ensured both tables (hydropower-consumption and solar-energy consumption) were comaptible for a join i.e identifying the column on which the join would be made are align.
+  - I selected my columns and average of both ..... and ....., created a join on the 'code' column and a  groupby 'Country' and 'Code' (see syntax in the code files and before and after screenshots in the data Samples file). 
+  - 
   
 
 
