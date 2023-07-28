@@ -8,8 +8,8 @@
 
 ## STEPS
 #### The following steps was followed in this project
-  - Creating a Github Respository
-#### * Creating three folders 
+  - #### Creating a Github Respository
+     - #### Creating three folders 
 ##### &emsp; •	Readme file
 ##### &emsp; •	Code files
 ##### &emsp; •	Data Samples or Snapshots
