@@ -5,7 +5,6 @@ This Project covers the extraction, transfromation and loading of the global con
 ## Data Source
 The data will be sourced from kaggle
 
-
 ## Steps followed for this project
 The following steps was followed in this project
 - Creating a Github Respository
@@ -39,7 +38,6 @@ The following steps was followed in this project
   - I noticed some null values in my table under the country_code which is attributed to continents not having a Country_code, I didnt need this rows with null 
   - I deleted the rows with null (see syntax in code file and before and after screen shots)
   - My data was finally transformed and succesfully loaded into MySQL database.
- 
   
 ## Outcome
 I succesfully created a table with the country, country code, average hydro consumption and average solar energy consumption for further analysis loaded into MySQL database.
