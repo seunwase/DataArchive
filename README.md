@@ -1,12 +1,12 @@
-# DataArchive
+# Data Archive - Global Consumption of hydropower and solar energy consumption.
 ## Project Description
-This Project covers the analysis of the consumption of hydropower  and wind energy. It will analyze the trend and try to undertand the acceptance of renewable energy over time.
+This Project covers the extraction, transfromation and loading of the global consumption of hydropower and solar energy consumption into MySQL. The loaded data could be used in analyzing trends and deducing other to undertand the acceptance of renewable energy over time.
 
 ## Data Source
 The data will be sourced from kaggle
 
 
-## STEPS
+## Steps followed for this project
 The following steps was followed in this project
 - Creating a Github Respository
   
@@ -41,8 +41,8 @@ The following steps was followed in this project
   - My data was finally transformed and succesfully loaded into MySQL database.
  
   
-## OUTCOMES
+## Outcome
 I succesfully created a table with the country, country code, average hydro consumption and average solar energy consumption for further analysis loaded into MySQL database.
 
-## REFLECTION
+## Reflection
 This project guides me throught the steps of extracting datasets into MySQL, tranforming them into a desired form using join and groupby, creating a new table of the transformed data and loading it in MySQL database. With fewer codes in python I could have achieved the same goal of extraction and transforming before loading it into MySQL but its a matter of requirement. 
