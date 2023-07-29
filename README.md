@@ -4,6 +4,8 @@ This Project covers the extraction, transfromation and loading of the global con
 
 ## Data Source
 The data will be sourced from kaggle
+-Justification of Data Selection: Climate change amongst others is one the bane of the world today, with wild fires, extreme tempeatures and other vices, one of he proposed solution is a shift from hydrocarbons to new sources of clean energy. hydropower and solar energy fall into this category. Data from the consumption which can reflect the adoption of this energy sources over the years will be useful in deducing insights and creating questions that could aid global transition. 
+Our Data set suits this purpose as its  structured and the availability of a common column (key) for joining the two tables. The data also has the numerical column for an aggregation to find the average country consumption between 2000 - 2020
 
 ## Steps followed for this project
 The following steps was followed in this project
