@@ -1,4 +1,4 @@
-# Data Archive - Global Consumption of hydropower and solar energy consumption.
+# Data Archive - Average Global Consumption of hydropower and solar energy consumption By Country (2000 - 2020).
 ## Project Description
 This Project covers the extraction, transfromation and loading of the global consumption of hydropower and solar energy consumption into MySQL. The loaded data could be used in analyzing trends and deducing other to undertand the acceptance of renewable energy over time.
 
