@@ -1,6 +1,6 @@
 # Data Archive - Average Global Consumption of Hydropower and Solar Energy Consumption By Country (2000 - 2020).
 ## Problem Description and Question?
-Each country has a comparative advantage in the various sources of renewable energy. This project aims to answer what is the trend over the years in consumption of solar sourced and hydro sourced energy by country? In future analysis, we could analyze each country's preference between solar and hydro and make projections to draw a roadmap towards achieving global clean energy target. 
+Each country has a comparative advantage in the various sources of renewable energy. This project aims to answer what is the trend over the years in consumption of solar sourced energy consumption and hydro sourced energy consumption by country? In future analysis, we could analyze each country's preference between solar and hydro and make projections to draw a roadmap towards achieving global clean energy target. 
 This Project covers the extraction, transfromation and loading of the global consumption of hydropower and solar energy consumption into MySQL. The loaded data could be used in analyzing trends and deducing other insights to understand the acceptance of renewable energy over time by each country.
 
 ## Data Source
