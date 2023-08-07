@@ -1,10 +1,18 @@
 # Data Archive - Average Global Consumption of Hydropower and Solar Energy Consumption By Country (2000 - 2020).
+## Problem Question?
+Each country has a comparative advantage in the various sources of renewable energy. This project aims to answer what is the trend over the years in consumption of solar sourced and hydro sourced energy by country? In future analysis, we could analyze each country's preference between solar and hydro and make projections to draw a roadmap towards achieving global clean energy target. 
+
 ## Project Description
-This Project covers the extraction, transfromation and loading of the global consumption of hydropower and solar energy consumption into MySQL. The loaded data could be used in analyzing trends and deducing other to undertand the acceptance of renewable energy over time.
+This Project covers the extraction, transfromation and loading of the global consumption of hydropower and solar energy consumption into MySQL. The loaded data could be used in analyzing trends and deducing other insights to understand the acceptance of renewable energy over time by each country.
 
 ## Data Source
 The data will be sourced from kaggle
-- Justification of Data Selection: Climate change amongst others is one the bane of the world today, with wild fires, extreme tempeatures and other vices, one of he proposed solution is a shift from hydrocarbons to new sources of clean energy. hydropower and solar energy fall into this category. Data from the consumption which can reflect the adoption of this energy sources over the years will be useful in deducing insights and creating questions that could aid global transition. 
+### Dimension Table
+- hydropower-consumption will be sourced from kaggle.com while other details to complete the dimension table will be gotten from other sources. The hydro consumption will be sourced from kaggle, the value of the continent column will be sourced from wisevoter.com whilethe population and landmass of each country will be sourced from worldometer. Other sources include google search for some countries landmass and population.
+### Fact Table
+- Our Fact table which contains data on solar energy consumption will be sourced on kaggle.com
+
+- Justification of Data Selection: Climate change amongst others is one the bane of the world today, with wild fires, extreme tempeatures and other vices, one of the proposed solution is a shift from hydrocarbons to new sources of clean energy. hydropower and solar energy fall into this category. Data from the consumption which can reflect the adoption of this energy sources over the years will be useful in deducing insights and creating questions that could aid global transition. 
 - Our Data set suits this purpose as its  structured and the availability of a common column (key) for joining the two tables. The data also has the numerical column for an aggregation to find the average country consumption between 2000 - 2020
 
 ## Steps followed for this project
