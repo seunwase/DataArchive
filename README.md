@@ -27,21 +27,21 @@ The following steps was followed in this project
   
 - Data Extraction: I extracted the data from kaggle Renewable Energy by
   - Downloading the two csv data into my local drive.
-  - Upgraded my dimension table (hydropower consumption) to include continent, currency, population and landmass
+  - Upgraded my dimension table (hydropower consumption) to include continent, currency, population and landmass.
   - Opened my MySQL database
   - Created a Schema called Energy
   - Opened the table data import wizard under my schema
   - Browsed out the file path of where my data is stored on my local drive and clicked next at the bottom right of the screen
   - I selected the destination and clicked next at the bottom right of the screen to move to the configure import settings screen
-  - On the configure Import settings screen, i ensured my field type for the various columns was expected changing the Electricity from hydro (TWh) to int. before clicking next to move to the Import data screen
+  - On the configure Import settings screen, i ensured my field type for the various columns was expected before clicking next to move to the Import data screen
   - I clicked next to execute the importation of my data
   - After the completion, I refreshed the Schema under Navigator to confirm my table has been added under my schema
   - I repeated the process for importing the solar-energy consumption into my schema.
   - I ran a select * from the two tables to ensure they loaded. (This will show all the colums in the table and rows)
     
-- Data Transformation: The following steps were carried out to perfrom quality checks on my data and to transform it into a view i can use for further analysis
+- Data Transformation: The following steps were carried out to perfrom quality checks on my data and to transform it into a view I can use for further analysis
   - I ensured both tables (hydropower-consumption and solar-energy consumption) were comaptible for a join i.e identifying the column on which the join would be made are align.
-  - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both Electricity from hydro (TWh) and Electricity from solar, created a join on the 'code' column and a  groupby 'Country' and 'Code' (see syntax in the code files and before and after screenshots in the data Samples file).
+  - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both Electricity from hydro (TWh) and Electricity from solar(TWh), I created a join on the 'code' and 'year' column and a  groupby 'Country' and 'Code' (see syntax in the code files and before and after screenshots in the data Samples file).
  
 - Data Loading
   - I created a new table called hydro_solar_consumption from the joined table (see syntax in code file)
