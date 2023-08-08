@@ -28,7 +28,7 @@ The following steps was followed in this project
 - Data Extraction: I extracted the data from kaggle Renewable Energy by
   - Downloading the two csv data into my local drive.
   - Upgraded my dimension table (hydropower consumption) to include continent, currency, population and landmass.
-    -ISSUES
+    - ISSUES DURING EXTRACTION
     - Needed more columns in my dimension table and their values where from different sources; kaggle,wisevoter.com, sport-histoie.fr, worldometer and google.
     - Some countries values where not captured in my source base for instance the aruba is not captured in worldometers
     - The source of the fact sheet had some missing values such code and population for 'World', 'Europe', 'Africa' etc.
