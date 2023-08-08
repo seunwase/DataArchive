@@ -15,7 +15,7 @@ The data will be sourced from kaggle, wisevoter.com, sport-historie.fr, worldome
 - Our Data set suits this purpose as its  structured and the availability of a common column (key) for joining the two tables. The data also has the numerical column for an aggregation to find the average country consumption between 2000 - 2020
 
 ## Steps followed for this project
-The following steps was followed in this project
+The following steps was followed in this projectabc
 - Creating a Github Respository
   
 - Creating three folders
