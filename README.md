@@ -10,15 +10,10 @@ For the data sources to build the desired transformed table click on each item b
 - [Population and Land Area](https://www.worldometers.info/geography/alphabetical-list-of-countries/)
 - [Currency](https://sport-histoire.fr/en/Geography/Currencies_countries_of_the_world.php)
 - [Continent](https://wisevoter.com/country-rankings/countries-by-continent/)
-##### other dimension values not available in the above links were searched in google.com
+##### some values not available in the above links were sourced in google.com to fill in the dimension table
 ### Fact Table
 - [solar energy consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=solar-energy-consumption.csv)
   
-### Dimension Table
-- hydropower-consumption will be sourced from kaggle.com while other details to complete the dimension table will be gotten from other sources. The hydro consumption will be sourced from kaggle, the value of the currency from sport-historie.fr, countrys continent column was sourced from wisevoter.com, while the population and landmass of each country was sourced from worldometer. Other sources include google search for some countries landmass and population.
-### Fact Table
-- Our Fact table which contains data on solar energy consumption was sourced on kaggle.com
-
 #### Justification of Data Selection: 
 - Climate change amongst others is one the bane of the world today, with wild fires, extreme tempeatures and other vices, one of the proposed solution is a shift from hydrocarbons to new sources of clean energy. hydropower and solar energy fall into this category. Data from the consumption which can reflect the adoption of this energy sources over the years will be useful in deducing insights and creating questions that could aid global transition. 
 - Our Data set suits this purpose as its  structured and the availability of a common column (key) for joining the two tables. The data also has the numerical column for an aggregation to find the average country consumption between 2000 - 2020
