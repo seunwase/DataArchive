@@ -23,10 +23,10 @@ The following steps was followed in this project
   - Code files: You will find in this file, the scripts used in the extraction, transformation and loading (ETL) the data.
   - Data Samples or Snapshots: This file will include samples or snapshots of the dataset before and after a transformation.
     
-- Data Selection: I selected the hydropower-consumption and solar-energy consumption. I ensured they had a common attribute to enable join them and carry out a comparison.
+- Data Selection: I selected the hydropower-consumption and solar-energy consumption under the Renewable Energy dataset from Kaggle. I ensured they had a common attribute to enable join them and carry out a comparison.
   
 - Data Extraction: I extracted the data from kaggle Renewable Energy by
-  - Downloading the two csv data into my local drive.
+  - Downloaded the two csv data from kaggle.com and stored them into my local drive.
   - Upgraded my dimension table (hydropower consumption) to include continent, currency, population and landmass.
     - ISSUES DURING EXTRACTION
     - Needed more columns in my dimension table and their values where from different sources; kaggle,wisevoter.com, sport-histoie.fr, worldometer and google.
