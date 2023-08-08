@@ -15,11 +15,11 @@ For the data sources to build the desired transformed table click on each item b
 - [solar energy consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=solar-energy-consumption.csv)
   
 #### Justification of Data Selection: 
-- Climate change amongst others is one the bane of the world today. Increasing wild fires, extreme tempeatures and other climate related issues have become a growing concern. One of the proposed solution is a shift from hydrocarbons to new sources of clean energy. Hydropower and solar energy fall into the category of clean energy sources. Data from the energy consumption from this sources by different countries can serve as proxy of the adoption of this energy sources over the years by the countries.It will be useful in deducing insights and creating questions that could aid global transition. 
+- Climate change amongst others is one the bane of the world today. Increasing wild fires, extreme tempeatures and other climate related issues have become a growing concern. One of the proposed solution is a shift from hydrocarbons to new sources of clean energy. Hydropower and solar energy fall into the category of clean energy sources. Data from the energy consumption from these sources by different countries can serve as proxy of the adoption of this energy sources over the years by the countries. It will be useful in deducing insights and creating questions that could aid global transition. 
 - Our Data set suits this purpose as its  structured and the availability of a common column (key) for joining the two tables. The data also has the numerical column for an aggregation to find the average country consumption between 2000 - 2020
 
 ## Steps followed for this project
-The following steps was followed in this project
+The following steps are followed in this project
 ### Creating a Github Respository
 I created a public gitub respository for this project titled data archive.
   
