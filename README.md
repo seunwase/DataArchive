@@ -52,7 +52,7 @@ The following steps was followed in this project
     
 - Data Transformation: The following steps were carried out to perfrom quality checks on my data and to transform it into a view I can use for further analysis
   - I ensured both tables (hydropower-consumption and solar-energy consumption) were comaptible for a join i.e identifying the column on which the join would be made are align.
-  - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both Electricity from hydro (TWh) and Electricity from solar(TWh), I created a join on the 'code' and 'year' column and a  groupby 'Country' and 'Code' (see syntax in the code files and before and after screenshots in the data Samples file).
+  - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both Electricity from hydro (TWh) and Electricity from solar(TWh), I created a join on the 'Entity' and 'Year' column and a  groupby hydropower_consumption_dim.Entity, solar_energy_consumption.`code`, hydropower_consumption_dim.Continent,  hydropower_consumption_dim.Currency, hydropower_consumption_dim.Population, hydropower_consumption_dim.`Landmass km2` (see syntax in the code files and before and after screenshots in the data Samples file).
  
 - Data Loading
   - I created a new table called hydro_solar_consumption from the joined table (see syntax in code file)
