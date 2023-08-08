@@ -10,7 +10,7 @@ For the data sources to build the desired transformed table click on each item b
 - [Population and Land Area](https://www.worldometers.info/geography/alphabetical-list-of-countries/)
 - [Currency](https://sport-histoire.fr/en/Geography/Currencies_countries_of_the_world.php)
 - [Continent](https://wisevoter.com/country-rankings/countries-by-continent/)
-##### some values not available in the above links were sourced in google.com to fill in the dimension table
+##### Some values not available in the above links were sourced in google.com to fill in the dimension table
 ### Fact Table
 - [solar energy consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=solar-energy-consumption.csv)
   
