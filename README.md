@@ -33,20 +33,20 @@ The following steps was followed in this project
   - Downloaded the two csv data from kaggle.com and stored them into my local drive.
   - Upgraded my dimension table (hydropower consumption) to include continent, currency, population and landmass.
     
-    - ISSUES DURING EXTRACTION
+#### ISSUES DURING EXTRACTION
     - Needed more columns in my dimension table and their values where from different sources; kaggle,wisevoter.com, sport-histoie.fr, worldometer and google.
     - Some countries values where not captured in my source base for instance the aruba is not captured in worldometers
     - The source of the fact sheet had some missing values such code and population for 'World', 'Europe', 'Africa' etc.
     - importing data with missing values into sql created an error and didnt upload the rows with missing data.
     - The first column of the dimension table imported with an unwanted prefix 'ï»¿Entity' instead of 'Entity'.
       
-    - HOW ISSUES WERE SOLVED
+#### HOW ISSUES WERE SOLVED
     - Used power query conditional column to add new column and a delimeter (;) to seperate the desired output. Filled in a name for new column and the other required inputs. For example if column name; 'entity' operator: equals value: 'Afghanistan' then ouput:'Afghani Afghani'; 'Asia';'42239854';'Landmass'.
     - I then used the split column by delimeter under the transform tab to split the new columns into the four new columns and renamed them (currency, continent, population and landareakm2)
     - I filled the missing text column rows with 'NA' and the floats column rows with -1 ( this enabled me save my data in csv format and succesfully import all rows into sql)
     - I used the ALTER TABLE in mySQL to change it from 'ï»¿Entity' to the desired name.
       
-    -IMPORTING THE DATA INTO mySQL
+#### IMPORTING THE DATA INTO mySQL
   - Opened my MySQL database
   - Created a Schema called Energy
   - Opened the table data import wizard under my schema
