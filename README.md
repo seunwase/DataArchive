@@ -15,7 +15,7 @@ For the data sources to build the desired transformed table click on each item b
 - [solar energy consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=solar-energy-consumption.csv)
   
 #### Justification of Data Selection: 
-- Climate change amongst others is one the bane of the world today, with wild fires, extreme tempeatures and other vices, one of the proposed solution is a shift from hydrocarbons to new sources of clean energy. hydropower and solar energy fall into this category. Data from the consumption which can reflect the adoption of this energy sources over the years will be useful in deducing insights and creating questions that could aid global transition. 
+- Climate change amongst others is one the bane of the world today. Increasing wild fires, extreme tempeatures and other climate related issues have become a growing concern. One of the proposed solution is a shift from hydrocarbons to new sources of clean energy. Hydropower and solar energy fall into the category of clean energy sources. Data from the energy consumption from this sources by different countries can serve as proxy of the adoption of this energy sources over the years by the countries.It will be useful in deducing insights and creating questions that could aid global transition. 
 - Our Data set suits this purpose as its  structured and the availability of a common column (key) for joining the two tables. The data also has the numerical column for an aggregation to find the average country consumption between 2000 - 2020
 
 ## Steps followed for this project
@@ -29,20 +29,24 @@ The following steps was followed in this project
     
 - Data Selection: I selected the hydropower-consumption and solar-energy consumption under the Renewable Energy dataset from Kaggle. I ensured they had a common attribute to enable join them and carry out a comparison.
   
-- Data Extraction: I extracted the data from kaggle Renewable Energy by
+- Data Extraction: The below points shows the steps, issues and solutions encountered in the extraction phase
   - Downloaded the two csv data from kaggle.com and stored them into my local drive.
   - Upgraded my dimension table (hydropower consumption) to include continent, currency, population and landmass.
+    
     - ISSUES DURING EXTRACTION
     - Needed more columns in my dimension table and their values where from different sources; kaggle,wisevoter.com, sport-histoie.fr, worldometer and google.
     - Some countries values where not captured in my source base for instance the aruba is not captured in worldometers
     - The source of the fact sheet had some missing values such code and population for 'World', 'Europe', 'Africa' etc.
     - importing data with missing values into sql created an error and didnt upload the rows with missing data.
-    - The first column of my diemnsion table imported with an unwanted prefix 'ï»¿Entity' instead of 'Entity'.
+    - The first column of the dimension table imported with an unwanted prefix 'ï»¿Entity' instead of 'Entity'.
+      
     - HOW ISSUES WERE SOLVED
     - Used power query conditional column to add new column and a delimeter (;) to seperate the desired output. Filled in a name for new column and the other required inputs. For example if column name; 'entity' operator: equals value: 'Afghanistan' then ouput:'Afghani Afghani'; 'Asia';'42239854';'Landmass'.
     - I then used the split column by delimeter under the transform tab to split the new columns into the four new columns and renamed them (currency, continent, population and landareakm2)
     - I filled the missing text column rows with 'NA' and the floats column rows with -1 ( this enabled me save my data in csv format and succesfully import all rows into sql)
     - I used the ALTER TABLE in mySQL to change it from 'ï»¿Entity' to the desired name.
+      
+    -IMPORTING THE DATA INTO MYSQL
   - Opened my MySQL database
   - Created a Schema called Energy
   - Opened the table data import wizard under my schema
