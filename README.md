@@ -5,12 +5,14 @@ This Project covers the extraction, transformation and loading of the global con
 
 ## Data Source
 For the data sources to build the desired transformed table click on each item below:
+### Dimension Table Sources
 - [hydropower consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=hydropower-consumption.csv)
-- [solar energy consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=solar-energy-consumption.csv)
 - [Population and Land Area](https://www.worldometers.info/geography/alphabetical-list-of-countries/)
 - [Currency](https://sport-histoire.fr/en/Geography/Currencies_countries_of_the_world.php)
 - [Continent](https://wisevoter.com/country-rankings/countries-by-continent/)
-other values not available in the above links were searched in google.com 
+#### other dimension values not available in the above links were searched in google.com
+### Fact Table
+- [solar energy consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=solar-energy-consumption.csv)
   
 ### Dimension Table
 - hydropower-consumption will be sourced from kaggle.com while other details to complete the dimension table will be gotten from other sources. The hydro consumption will be sourced from kaggle, the value of the currency from sport-historie.fr, countrys continent column was sourced from wisevoter.com, while the population and landmass of each country was sourced from worldometer. Other sources include google search for some countries landmass and population.
