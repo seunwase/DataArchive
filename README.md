@@ -4,7 +4,7 @@ Each country has a comparative advantage in the various sources of renewable ene
 This Project covers the extraction, transformation and loading of the global consumption of hydropower and solar energy consumption into MySQL. The loaded data could be used in analyzing trends and deducing other insights to understand the acceptance of renewable energy over time by each country.
 
 ## Data Source
-For the data sources to build the desired transformed table click on each constituent below
+For the data sources to build the desired transformed table click on each item below:
 - [hydropower consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=hydropower-consumption.csv)
 - [solar energy consumption](https://www.kaggle.com/datasets/programmerrdai/renewable-energy?select=solar-energy-consumption.csv)
 - [Population and Land Area](https://www.worldometers.info/geography/alphabetical-list-of-countries/)
