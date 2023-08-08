@@ -46,7 +46,7 @@ The following steps was followed in this project
     - I filled the missing text column rows with 'NA' and the floats column rows with -1 ( this enabled me save my data in csv format and succesfully import all rows into sql)
     - I used the ALTER TABLE in mySQL to change it from 'ï»¿Entity' to the desired name.
       
-    -IMPORTING THE DATA INTO MYSQL
+    -IMPORTING THE DATA INTO mySQL
   - Opened my MySQL database
   - Created a Schema called Energy
   - Opened the table data import wizard under my schema
