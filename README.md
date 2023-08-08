@@ -22,14 +22,16 @@ For the data sources to build the desired transformed table click on each item b
 The following steps was followed in this project
 - Creating a Github Respository
   
-- Creating three folders
+### Creating three folders
   - Readme file: This is the file you are reading, it explains the project, the data sources used, the steps followed and the outcomes.
   - Code files: You will find in this file, the scripts used in the extraction, transformation and loading (ETL) the data.
   - Data Samples or Snapshots: This file will include samples or snapshots of the dataset before and after a transformation.
     
-- Data Selection: I selected the hydropower-consumption and solar-energy consumption under the Renewable Energy dataset from Kaggle. I ensured they had a common attribute to enable join them and carry out a comparison.
+### Data Selection:
+I selected the hydropower-consumption and solar-energy consumption under the Renewable Energy dataset from Kaggle. I ensured they had a common attribute to enable join them and carry out a comparison.
   
-- Data Extraction: The below points shows the steps, issues and solutions encountered in the extraction phase
+### Data Extraction:
+The below points shows the steps, issues and solutions encountered in the extraction phase
   - Downloaded the two csv data from kaggle.com and stored them into my local drive.
   - Upgraded my dimension table (hydropower consumption) to include continent, currency, population and landmass.
     
@@ -58,12 +60,13 @@ The following steps was followed in this project
   - I repeated the process for importing the solar-energy consumption into my schema.
   - I ran a select * from the two tables to ensure they loaded. (This will show all the columns in the table and rows)
     
-- Data Transformation: The following steps were carried out to perfrom quality checks on my data and to transform it into a view I can use for further analysis
+### Data Transformation: 
+The following steps were carried out to perfrom quality checks on my data and to transform it into a view I can use for further analysis
   - I ensured both tables (hydropower_consumption_dim and solar-energy consumption) were comaptible for a join i.e identifying the column on which the join would be made are align.
   - There were some rows that were not needed in the data such as CIS, Eastern Africa and other non- country rows. They have a code of NA. So i dleted them using the delete syntax where code ="na". N.B for the delete syntax to work, I had to use the safe update mode (see code file for syntax).
   - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both Electricity from hydro (TWh) and Electricity from solar(TWh), I created a join on the 'Entity' and 'Year' column and a  groupby hydropower_consumption_dim.Entity, solar_energy_consumption.`code`, hydropower_consumption_dim.Continent,  hydropower_consumption_dim.Currency, hydropower_consumption_dim.Population, hydropower_consumption_dim.`Landmass km2` (see syntax in the code files and before and after screenshots in the data Samples file).
  
-- Data Loading
+### Data Loading
   - I used the CREATE VIEW hydro_solar_transformed AS SELECT ... to creat a view called hydro_solar_transformed from the new joined table (see syntax in code file)
   - My data was finally transformed and succesfully loaded into MySQL database.
   
