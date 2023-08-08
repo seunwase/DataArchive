@@ -48,20 +48,19 @@ The following steps was followed in this project
   - I clicked next to execute the importation of my data
   - After the completion, I refreshed the Schema under Navigator to confirm my table has been added under my schema
   - I repeated the process for importing the solar-energy consumption into my schema.
-  - I ran a select * from the two tables to ensure they loaded. (This will show all the colums in the table and rows)
+  - I ran a select * from the two tables to ensure they loaded. (This will show all the columns in the table and rows)
     
 - Data Transformation: The following steps were carried out to perfrom quality checks on my data and to transform it into a view I can use for further analysis
-  - I ensured both tables (hydropower-consumption and solar-energy consumption) were comaptible for a join i.e identifying the column on which the join would be made are align.
+  - I ensured both tables (hydropower_consumption_dim and solar-energy consumption) were comaptible for a join i.e identifying the column on which the join would be made are align.
+  - There were some rows that were not needed in the data such as CIS, Eastern Africa and other non- country rows. They have a code of NA. So i dleted them using the delete syntax where code ="na". N.B for the delete syntax to work, I had to use the safe update mode (see code file for syntax).
   - I selected my columns (renamed them Country, Country_code using the 'AS' ) and average of both Electricity from hydro (TWh) and Electricity from solar(TWh), I created a join on the 'Entity' and 'Year' column and a  groupby hydropower_consumption_dim.Entity, solar_energy_consumption.`code`, hydropower_consumption_dim.Continent,  hydropower_consumption_dim.Currency, hydropower_consumption_dim.Population, hydropower_consumption_dim.`Landmass km2` (see syntax in the code files and before and after screenshots in the data Samples file).
  
 - Data Loading
-  - I created a new table called hydro_solar_consumption from the joined table (see syntax in code file)
-  - I noticed some null values in my table under the country_code which is attributed to continents not having a Country_code, I didnt need this rows with null 
-  - I deleted the rows with null (see syntax in code file and before and after screen shots)
+  - I used the CREATE VIEW hydro_solar_transformed AS SELECT ... to creat a view called hydro_solar_transformed from the new joined table (see syntax in code file)
   - My data was finally transformed and succesfully loaded into MySQL database.
   
 ## Outcome
 I succesfully created a table with the country, country code, average hydro consumption and average solar energy consumption for further analysis loaded into MySQL database.
 
 ## Reflection
-This project guides me throught the steps of extracting datasets into MySQL, tranforming them into a desired form using join and groupby, creating a new table of the transformed data and loading it in MySQL database. With fewer codes in python I could have achieved the same goal of extraction and transforming before loading it into MySQL but its a matter of requirement. 
+This project guides me through the steps of extracting datasets into MySQL, tranforming them into a desired form using join and groupby, creating a new table of the transformed data and loading it in MySQL database. With fewer codes in python I could have achieved the same goal of extraction and transforming before loading it into MySQL but its a matter of requirement. 
