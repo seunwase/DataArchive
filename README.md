@@ -81,4 +81,4 @@ I succesfully loaded a view with the Country, Country code, Continent,  Populati
 ## Reflection
 This project guides me through the steps of extracting datasets into MySQL, tranforming them into a desired form using join and groupby, creating a new table of the transformed data and loading it in MySQL database. With fewer codes in python I could have achieved the same goal of extraction and transforming before loading it into MySQL but its a matter of choice or requirement. 
 
-The process of extraction, transformation and loading a datasets helps a data analyst create a dataset in a desired format for easier analysis. It expand flexibility and the scope of insights tat can be deduced from the dataset.  
+The process of extraction, transformation and loading a datasets helps a data analyst create a dataset in a desired format for easier analysis. It expand flexibility and the scope of insights that can be deduced from the dataset.  
