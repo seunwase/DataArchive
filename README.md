@@ -70,7 +70,9 @@ The following steps were carried out to perfrom quality checks on my data and to
 ### Data Loading
   - I used the CREATE VIEW hydro_solar_transformed AS SELECT ... to creat a view called hydro_solar_transformed from the new joined table (see syntax in code file)
   - My data was finally transformed and succesfully loaded into MySQL database.
-  
+
+### Example of usability of this data
+We could for instance want to know the country with the highest consumption of solar, this can be done using an order by avg solar consumption descending our newly created viewd. (See code file)
 ## Outcome
 I succesfully created a table with the country, country code, average hydro consumption and average solar energy consumption for further analysis loaded into MySQL database.
 
