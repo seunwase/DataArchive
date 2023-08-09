@@ -29,7 +29,7 @@ I created a public gitub respository for this project titled data archive.
   - Data Samples or Snapshots: This file will include samples or snapshots of the dataset before and after a transformation.
     
 ### Data Selection:
-I selected the hydropower-consumption and solar-energy consumption under the Renewable Energy dataset from Kaggle. I ensured they had a common attribute to enable join them and carry out a comparison.
+I selected the hydropower-consumption and solar-energy consumption under the Renewable Energy dataset from Kaggle. I ensured they had a common attribute to enable join them and carry out a comparison. Hydropower consumption and solar energy consumption are numerical variables. I can therfore carry out an aggregate function on them.
   
 ### Data Extraction:
 The below points shows the steps, issues and solutions encountered in the extraction phase
