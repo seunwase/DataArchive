@@ -1,0 +1,8 @@
+Using the created view to answer a Question
+
+```sql
+
+SELECT * FROM energy.hydro_solar_transformed
+ORDER BY Avg_hydro_consumption DESC;
+
+```
